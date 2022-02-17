@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,900&family=Oswald&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>hair salon</title>
+</head>
+<body>
+    <div id="navbar_container">
+        <div class="navbar">
+            <div class="logo">Tim's BarberShop</div>
+            <div class="nav_content">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+            <div class="close-ham">
+                
+                <div class="ham_container">
+                    <i class="fa fa-bars"></i>
+                </div>
+                
+                <div class="close_container">
+                    <strong class="close">X</strong>
+                </div>
+                 
+            </div>
+            
+        </div>
+      <!-- nav bar phone  -->
+        <div class="navbar_phone">
+            <div class="nav_content_phone">
+               <a href="#about">About</a>
+                
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+        </div>
+    </div>
+  <!-- header -->
+  
+  <div id="header">
+    <div class='intro_pic'><img src="imgs/barber_header.jpg" alt=""></div>
+        <div class="intro-container">
+            <div class="intro"><h1>BARBERSHOP BY TIM</h1></div>
+            <div class="intro"><h2>LET YOUR HAIR DO THE TALKING</h2></div>
+        </div>
+ 
+  </div>
+
+    
+    <!-- about -->
+     <div id="about">
+         <div class="bout"><h1>ABOUT US</h1></div>
+         
+         <div class="about_cotain">
+            <div class="wall_img"><img src="imgs/babershop.jpg" alt=""></div>
+            <div class="about_content"><p>Tim BaberShop is one of the best barbershop in Valdosta Ga. We will give you the best quality hairstyles for moderate price. We are known as a quality shop, with quality employees, quality services and quality prices. Come to us and enjoy our best services!</p> </div>
+         </div>
+        
+    </div>
+<!-- services -->
+    <div id="services">
+        <div class="service-title"><h1>OUR SERVICES</h1></div>
+        
+        <table class="service_contain">
+            <tr>
+               <th>Men's Haiscut</th>
+               <th>Beard Trim</th>
+               <th>Treatment</th>
+               <th>Wash</th>
+               
+               
+            </tr>
+            <tr>
+                <td class="price">$25</td>
+                <td class="price">$12</td>
+                <td class="price">$10</td>
+                <td class="price">$8</td>
+                
+               
+            </tr>
+            <tr>
+                
+                <td>Full style and cut to suit your face shape, professionally styled.</td>
+                <td>Keep your beard in great shape with a bit of extra attention with clippers.</td>
+                <td>Get full treattment by your professional stylist to keep your hair healthy</td>
+                <td>Nourish your head and scalp with full wash using our exclusive product </td>
+               
+            </tr>
+   
+        </table>
+    </div>
+    <!-- gallery -->
+    <div id="gallery">
+        <div class="gallery-title"><h1>OUR GALLERY</h1></div>
+        <div class="gallery_sub">
+            <div class="pic1">
+                <span class="fade"></span>
+                <img src="imgs/man1.jpg" alt="">
+            </div>
+            <div class="pic1">
+                <span class="fade"></span>
+                <img src="imgs/man2.jpg" alt="">
+            </div>
+            
+        </div>
+            
+       
+        <div class="gallery_sub">
+            <div class="pic1">
+                <span class="fade"></span>
+                <img src="imgs/man4.jpg" alt="">
+            </div>
+            <div class="pic1">
+                <span class="fade"></span>
+                <img src="imgs/man5.jpg" alt="">
+            </div>
+           
+
+        </div>
+      
+    </div>  
+    <div id="footer">
+        <div class="img-footer"><span></span><img src="imgs/stripe1.jpg" alt=""></div>
+        <div class="footer-words"><strong>Made By Tim 2022</strong></div>
+        
+    </div>
+<!-- control the navbar  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('.ham_container').click(()=>{
+
+               $('.close_container').css("z-index", "2");
+               $('.ham_container').css('z-index', '-2');
+               $('.navbar_phone').css('top', '4.7rem')
+            })
+
+         
+            $('.close_container').click(()=>{
+                $('.ham_container').css("z-index", "2");
+                $('.close_container').css('z-index', '-2');
+                $('.navbar_phone').css('top', '-10000rem')
+                var navHeight = $('#navbar_container').outerHeight();
+                
+            })
+
+        
+
+
+
+
+
+        })
+
+
+        
+
+        
+    </script>
+</body>
+</html>
